@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="알람 추가   +   "
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:background="#d6c209"
+        android:id="@+id/alarmPlusBtn" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="전부 삭제   -   "
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:background="#a49b36"
+            android:id="@+id/alarmDeleteBtn"/>
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/alarmList1"
+        android:background="#292b61"></ListView>
+
+</LinearLayout>

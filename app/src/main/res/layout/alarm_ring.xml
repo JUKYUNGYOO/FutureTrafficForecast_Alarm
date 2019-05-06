@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FA0"
+        android:text="알람"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:id="@+id/alarmText"
+        android:layout_above="@+id/date"
+        android:layout_centerHorizontal="true"/>
+    <ImageView
+        android:layout_width="280dp"
+        android:layout_height="137dp"
+        android:src="@drawable/alarm_ring"
+        android:id="@+id/img_alarm_ring"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/date"
+        android:layout_above="@+id/time"
+        android:textColor="#ffffff"
+        android:textSize="35dp"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/time"
+        android:layout_above="@+id/img_alarm_ring"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:textColor="#ffffff"
+        android:textSize="50dp"/>
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:text="종료"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textColor="#FA0"
+        android:background="#501515"
+        android:id="@+id/stop_Btn"/>
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:src="@drawable/alarm"
+        android:id="@+id/imgBtn_alarm"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="50dp"
+       />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgBtn_alarm"
+        android:text="alarm"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="80dp"/>
+
+    <ImageButton
+        android:layout_width="113dp"
+        android:layout_height="110dp"
+        android:src="@drawable/traffic"
+        android:id="@+id/imgBtn_traffic"
+        android:layout_toRightOf="@+id/imgBtn_alarm"
+        android:layout_alignBaseline="@+id/imgBtn_alarm"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="70dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgBtn_traffic"
+        android:layout_alignRight="@+id/imgBtn_traffic"
+        android:text="traffic"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="40dp"/>
+
+
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="110dp"
+        android:src="@drawable/weather"
+        android:id="@+id/imgBtn_weather"
+        android:layout_below="@+id/imgBtn_alarm"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="62dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgBtn_weather"
+        android:text="weather"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="80dp"/>
+
+    <ImageButton
+        android:layout_width="115dp"
+        android:layout_height="110dp"
+        android:src="@drawable/setting"
+        android:id="@+id/imgBtn_setting"
+        android:layout_alignTop="@+id/imgBtn_weather"
+        android:layout_alignStart="@+id/imgBtn_traffic"
+        android:layout_alignLeft="@+id/imgBtn_traffic" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgBtn_setting"
+        android:layout_alignRight="@+id/imgBtn_traffic"
+        android:text="setting"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"/>
+
+
+
+</RelativeLayout>
